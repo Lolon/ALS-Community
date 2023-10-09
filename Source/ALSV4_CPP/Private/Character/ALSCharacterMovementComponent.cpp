@@ -10,6 +10,7 @@
 UALSCharacterMovementComponent::UALSCharacterMovementComponent(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
+	bRequestMovementSettingsChange = 1;
 }
 
 void UALSCharacterMovementComponent::OnMovementUpdated(float DeltaTime, const FVector& OldLocation,
@@ -179,7 +180,8 @@ void UALSCharacterMovementComponent::SetMovementSettings(FALSMovementSettings Ne
 {
 	// Set the current movement settings from the owner
 	CurrentMovementSettings = NewMovementSettings;
-	bRequestMovementSettingsChange = true;
+	
+	bRequestMovementSettingsChange = true;	//crashes due to write access
 }
 
 void UALSCharacterMovementComponent::SetAllowedGait(EALSGait NewAllowedGait)

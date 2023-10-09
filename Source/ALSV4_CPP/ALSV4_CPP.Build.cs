@@ -10,9 +10,28 @@ public class ALSV4_CPP : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(new[]
-			{"Core", "CoreUObject", "Engine", "InputCore", "NavigationSystem", "AIModule", "GameplayTasks","PhysicsCore", "Niagara", "EnhancedInput"
+			{
+			"Core", 
+			"CoreUObject",
+			"Engine", 
+			"InputCore",
+			"NavigationSystem",
+			"AIModule",
+			"GameplayTasks",
+			"PhysicsCore",
+			"Niagara",
+			"EnhancedInput",
+			"LyraGame",
+			"ModularGameplay"
 			});
 
-		PrivateDependencyModuleNames.AddRange(new[] {"Slate", "SlateCore"});
+		PrivateDependencyModuleNames.AddRange(new[] {
+				"Slate",
+				"SlateCore",
+				"GameplayTags",
+                "GameplayTasks",
+                "GameplayAbilities",
+                "GameplayMessageRuntime",
+		});
 	}
 }

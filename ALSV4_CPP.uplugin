@@ -36,6 +36,11 @@
 		{
 			"Name": "EnhancedInput",
 			"Enabled": true
+		},
+		{
+			"Name": "ModularGameplay",
+			"Enabled": true
 		}
-	]
+	],
+	"MarketplaceURL": ""
 }

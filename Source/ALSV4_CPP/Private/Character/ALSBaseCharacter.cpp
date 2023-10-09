@@ -83,6 +83,11 @@ void AALSBaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	if (MyCharacterMovementComponent == NULL)
+	{
+		return;
+	}
+
 	// If we're in networked game, disable curved movement
 	bEnableNetworkOptimizations = !IsNetMode(NM_Standalone);
 

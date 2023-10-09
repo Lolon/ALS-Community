@@ -9,7 +9,9 @@
 #include "Library/ALSCharacterEnumLibrary.h"
 #include "Library/ALSCharacterStructLibrary.h"
 #include "Engine/DataTable.h"
-#include "GameFramework/Character.h"
+#include "Character/LyraCharacter.h"
+
+
 
 #include "ALSBaseCharacter.generated.h"
 
@@ -27,7 +29,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRagdollStateChangedSignature, bool,
  * Base character class
  */
 UCLASS(BlueprintType)
-class ALSV4_CPP_API AALSBaseCharacter : public ACharacter
+class ALSV4_CPP_API AALSBaseCharacter : public ALyraCharacter
 {
 	GENERATED_BODY()
 
