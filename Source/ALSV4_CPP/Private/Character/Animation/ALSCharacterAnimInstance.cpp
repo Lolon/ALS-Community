@@ -66,7 +66,7 @@ void UALSCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
 	Super::NativeUpdateAnimation(DeltaSeconds);
 
-	if (!Character || DeltaSeconds == 0.0f || Character->GetCharacterMovement() == NULL)
+	if (!Character || DeltaSeconds == 0.0f )
 	{
 		return;
 	}
